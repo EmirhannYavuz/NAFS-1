@@ -5,9 +5,9 @@ public class CalculatorService
     public static void Run()
     {
         Console.WriteLine("İlk sayıyı giriniz: ");
-        int number1 = Convert.ToInt32(Console.ReadLine());
+        double number1 = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("İkinci sayıyı giriniz: ");
-        int number2 = Convert.ToInt32(Console.ReadLine());
+        double number2 = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Yapmak istediğiniz işlemi seçiniz (+,-,/,x): ");
         char operation = Convert.ToChar(Console.ReadLine().ToLower());
         
@@ -26,7 +26,7 @@ public class CalculatorService
                 Console.WriteLine("Çarpım: " + (number1 * number2));
                 break;
             default:
-                Console.WriteLine("Geçersiz işlem");
+                Console.WriteLine("Geçersiz işlem türü seçildi.");
                 break;
         }
     }
